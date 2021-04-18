@@ -1,5 +1,5 @@
-# MultiBP
-MultiBP is a framework that allows the comparison of two long DNA sequences using Smith-Waterman algorithm in multiple GPUs with block pruning features using a score-share Static or Dynamic workload distribution.
+# Static-MultiBP
+MultiBP is a solution that allows the comparison of two long DNA sequences using Smith-Waterman algorithm in multiple GPUs with block pruning features using a score-share static workload distribution.
 
 # Source Code
 Static-MultiBP: https://github.com/Marcoacfbr/Static-MultiBP.git
@@ -11,6 +11,7 @@ The scripts to execute Static-MultiBP and Dynamic-MultiBP in a SLURM environment
 
 # Deploy instructions
 ./configure
+
 make
 
 # Execution instructions (check help instructions)
