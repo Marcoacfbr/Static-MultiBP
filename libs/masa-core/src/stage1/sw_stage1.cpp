@@ -491,7 +491,8 @@ int stage1(Job* job) {
 	delete logger;
 
          if (SHARE)
-           pthread_cancel(thr);
+           if ((job->split) && (job->block_pruning)) 
+             pthread_cancel(thr);
 
     if (DEBUGM) {
        fflush(dbabp);
